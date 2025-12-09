@@ -28,19 +28,13 @@ public class PagamentoClient {
             }
         """;
 
-        HttpRequest request = new HttpRequest(
-                "https://api.externa.com/v1/pagamentos",
-                "POST",
-                headers,
-                queryParams,
-                body,
-                5000,
-                true,   // auth
-                true,   // retry
-                false   // cache
-        );
 
+        HttpRequest request = new HttpRequest.BuilderClass().setUrl("https://api.externa.com/v1/pagamentos").setBody(body).build();
         enviar(request);
+
+
+
+
     }
 
     private void enviar(HttpRequest request) {
