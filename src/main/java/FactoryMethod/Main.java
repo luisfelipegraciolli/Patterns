@@ -1,14 +1,17 @@
 package FactoryMethod;
 
-
 public class Main {
-    public
-
     static void main() {
-        LogisticaCreator logisticaTerrestre = new LogisticaTerrestre();
-        logisticaTerrestre.planejarEntrega();
+        Formato f;
+        Texto texto = new Texto("O rato roeu a roupa do rei de roma", "TXT");
 
-        LogisticaCreator logisticaMaritima = new LogisticaMaritima();
-        logisticaMaritima.planejarEntrega();
+        if( texto.getFormato().equals("PDF")){
+            f = new FormatoPdf(texto.t);
+            f.salvar();
+        }
+        else if ( texto.getFormato().equals("TXT")) {
+            f = new FormatoTxt(texto.t);
+            f.salvar();
+        }
     }
 }
