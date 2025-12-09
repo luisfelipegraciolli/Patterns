@@ -1,5 +1,7 @@
 package AbstractFactory;
 
+import AbstractFactory.Interfaces.Email;
+
 public class EmailSimples implements Email {
     @Override
     public void enviar(String mensagem) {

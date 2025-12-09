@@ -1,19 +1,22 @@
 package AbstractFactory;
 
-public class NotificacaoService {
-    public void enviarNotificacaoSimples(String mensagem) {
-        Email email = new EmailSimples();
-        SMS sms = new SMSSimples();
+import AbstractFactory.Factories.NotificationFactory;
+import AbstractFactory.Interfaces.CanalAdicional;
+import AbstractFactory.Interfaces.Email;
 
-        email.enviar(mensagem);
-        sms.enviar(mensagem);
+public class NotificacaoService {
+
+    private NotificationFactory factory;
+
+    public NotificacaoService(NotificationFactory factory){
+        this.factory = factory;
     }
 
-    public void enviarNotificacaoPremium(String mensagem) {
-        Email email = new EmailPremium();
-        Push push = new PushPremium();
+    public void enviarNotificacao(String mensagem){
+        Email email = factory.criarEmail();
+        CanalAdicional canalAdicional = factory.criarCanalAdicional();
 
         email.enviar(mensagem);
-        push.enviar(mensagem);
+        canalAdicional.enviar(mensagem);
     }
 }

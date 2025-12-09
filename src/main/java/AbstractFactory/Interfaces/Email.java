@@ -1,4 +1,4 @@
-package AbstractFactory;
+package AbstractFactory.Interfaces;
 
 public interface Email {
     void enviar(String mensagem);
