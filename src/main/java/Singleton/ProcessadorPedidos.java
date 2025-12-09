@@ -4,9 +4,8 @@ public class ProcessadorPedidos {
     public void processar() {
 
         // CADA INSTÂNCIA do processador PRECISA das configurações
-        ConfiguracoesSistema config = new ConfiguracoesSistema();
 
-        System.out.println("Processador usando URL: " + config.getUrlServicoPagamento());
+        System.out.println("Processador usando URL: " + ConfiguracoesSistema.getInstance().getUrlServicoPagamento());
         // Lógica de processamento...
     }
 }
