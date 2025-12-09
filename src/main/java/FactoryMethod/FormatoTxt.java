@@ -9,6 +9,6 @@ public class FormatoTxt extends Formato{
 
     @Override
     public void salvar() {
-        System.out.println("Texto > " + texto + "Salvando em formato PDF!");
+        System.out.println("Texto > " + texto + "\nSalvando em formato TXT!");
     }
 }
