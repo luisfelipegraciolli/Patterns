@@ -1,8 +1,8 @@
-package AbstractFactory;
+package Criacionais.AbstractFactory;
 
-import AbstractFactory.Factories.NotificationFactory;
-import AbstractFactory.Interfaces.CanalAdicional;
-import AbstractFactory.Interfaces.Email;
+import Criacionais.AbstractFactory.Factories.NotificationFactory;
+import Criacionais.AbstractFactory.Interfaces.CanalAdicional;
+import Criacionais.AbstractFactory.Interfaces.Email;
 
 public class NotificacaoService {
 

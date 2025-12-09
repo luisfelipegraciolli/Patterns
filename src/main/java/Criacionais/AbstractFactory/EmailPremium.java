@@ -1,6 +1,6 @@
-package AbstractFactory;
+package Criacionais.AbstractFactory;
 
-import AbstractFactory.Interfaces.Email;
+import Criacionais.AbstractFactory.Interfaces.Email;
 
 public class EmailPremium implements Email {
     @Override

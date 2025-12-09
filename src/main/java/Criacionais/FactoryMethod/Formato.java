@@ -1,4 +1,4 @@
-package FactoryMethod;
+package Criacionais.FactoryMethod;
 
 public abstract class Formato {
     private Texto texto;

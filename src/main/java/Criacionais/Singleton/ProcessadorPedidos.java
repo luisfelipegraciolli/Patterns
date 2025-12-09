@@ -1,4 +1,4 @@
-package Singleton;
+package Criacionais.Singleton;
 
 public class ProcessadorPedidos {
     public void processar() {

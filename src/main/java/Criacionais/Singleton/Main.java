@@ -1,4 +1,4 @@
-package Singleton;
+package Criacionais.Singleton;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package FactoryMethod;
+package Criacionais.FactoryMethod;
 
 public class FormatoTxt extends Formato{
     private String texto;

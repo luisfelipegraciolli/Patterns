@@ -1,4 +1,4 @@
-package Singleton;
+package Criacionais.Singleton;
 
 public class GerenciadorLog {
     public void registrarLog(String mensagem) {

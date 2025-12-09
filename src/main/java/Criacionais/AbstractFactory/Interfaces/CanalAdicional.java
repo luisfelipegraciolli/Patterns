@@ -1,4 +1,4 @@
-package AbstractFactory.Interfaces;
+package Criacionais.AbstractFactory.Interfaces;
 
 public interface CanalAdicional {
     void enviar(String mensagem);

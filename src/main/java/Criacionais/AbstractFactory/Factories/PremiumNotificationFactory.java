@@ -1,10 +1,9 @@
-package AbstractFactory.Factories;
+package Criacionais.AbstractFactory.Factories;
 
-import AbstractFactory.EmailPremium;
-import AbstractFactory.Interfaces.CanalAdicional;
-import AbstractFactory.Interfaces.Email;
-import AbstractFactory.PushPremium;
-import AbstractFactory.SMSSimples;
+import Criacionais.AbstractFactory.EmailPremium;
+import Criacionais.AbstractFactory.Interfaces.CanalAdicional;
+import Criacionais.AbstractFactory.Interfaces.Email;
+import Criacionais.AbstractFactory.PushPremium;
 
 public class PremiumNotificationFactory implements NotificationFactory{
 

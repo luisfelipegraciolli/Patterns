@@ -1,4 +1,4 @@
-package FactoryMethod;
+package Criacionais.FactoryMethod;
 
 public class Main {
     static void main() {

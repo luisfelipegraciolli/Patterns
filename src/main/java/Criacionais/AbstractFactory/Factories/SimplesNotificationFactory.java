@@ -1,9 +1,9 @@
-package AbstractFactory.Factories;
+package Criacionais.AbstractFactory.Factories;
 
-import AbstractFactory.EmailSimples;
-import AbstractFactory.Interfaces.CanalAdicional;
-import AbstractFactory.Interfaces.Email;
-import AbstractFactory.SMSSimples;
+import Criacionais.AbstractFactory.EmailSimples;
+import Criacionais.AbstractFactory.Interfaces.CanalAdicional;
+import Criacionais.AbstractFactory.Interfaces.Email;
+import Criacionais.AbstractFactory.SMSSimples;
 
 public class SimplesNotificationFactory implements NotificationFactory{
 

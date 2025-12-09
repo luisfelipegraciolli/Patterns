@@ -1,6 +1,6 @@
-package AbstractFactory;
+package Criacionais.AbstractFactory;
 
-import AbstractFactory.Interfaces.CanalAdicional;
+import Criacionais.AbstractFactory.Interfaces.CanalAdicional;
 
 public class PushPremium implements CanalAdicional {
     @Override
