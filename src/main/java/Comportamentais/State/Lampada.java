@@ -1,18 +1,17 @@
 package Comportamentais.State;
 
 public class Lampada {
-    private String estadoAtual = "DESLIGADA"; // Rígido e baseado em string
+    public EstadoLamapada estadoAtual;
 
-    public void pressionarBotao() {
-        if (estadoAtual.equals("DESLIGADA")) {
-            estadoAtual = "LIGADA";
-            System.out.println("Luz Ligada.");
-        } else if (estadoAtual.equals("LIGADA")) {
-            estadoAtual = "DESLIGADA";
-            System.out.println("Luz Desligada.");
-        } else if (estadoAtual.equals("COM_DEFEITO")) {
-            System.out.println("Luz quebrada. Nada acontece.");
-        }
+    public Lampada() {
+        this.estadoAtual = new Desligada();
     }
-    // ... Problemas se adicionar mais estados (e.g., Modo Piscante, Modo Noturno)
+
+    public void setNovoEstado(EstadoLamapada novoEstado) {
+        this.estadoAtual = novoEstado;
+    }
+
+    public void pressionarBotao(){
+        estadoAtual.pressionarBotao(this);
+    }
 }
