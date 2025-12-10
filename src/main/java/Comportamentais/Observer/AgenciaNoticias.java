@@ -19,7 +19,9 @@ public class AgenciaNoticias implements ISubject{
 
     @Override
     public void notificar() {
-
+        for (IObserver observer: observadores){
+            observer.atualizar(ultimaNoticia);
+        }
     }
 
     public void publicarNovaNoticia(String noticia) {
