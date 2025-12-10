@@ -1,4 +1,4 @@
-package Comportamentais.Facade;
+package Estruturais.Facade;
 
 public class ServicoNotificacao {
     public void enviarConfirmacao(String cliente) {

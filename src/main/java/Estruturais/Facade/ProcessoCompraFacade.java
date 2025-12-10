@@ -1,4 +1,4 @@
-package Comportamentais.Facade;
+package Estruturais.Facade;
 
 public class ProcessoCompraFacade {
     private GerenciadorEstoque estoque;

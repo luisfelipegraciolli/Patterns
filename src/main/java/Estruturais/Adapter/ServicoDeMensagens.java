@@ -1,4 +1,4 @@
-package Comportamentais.Adapter;
+package Estruturais.Adapter;
 
 public class ServicoDeMensagens {
     private ILoggerNovo logger;

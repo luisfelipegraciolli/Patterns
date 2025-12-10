@@ -1,4 +1,4 @@
-package Comportamentais.Facade;
+package Estruturais.Facade;
 
 public class CarrinhoComprasCliente {
     public void executarCompra(String produtoId, double valor, String cliente) {

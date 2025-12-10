@@ -1,4 +1,4 @@
-package Comportamentais.Facade;
+package Estruturais.Facade;
 
 public class GerenciadorEstoque {
     public boolean verificarDisponibilidade(String produtoId) {

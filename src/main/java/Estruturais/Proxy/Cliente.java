@@ -1,4 +1,4 @@
-package Comportamentais.Proxy;
+package Estruturais.Proxy;
 
 public class Cliente {
     static void main() {

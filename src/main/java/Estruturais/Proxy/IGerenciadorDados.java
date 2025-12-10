@@ -1,4 +1,4 @@
-package Comportamentais.Proxy;
+package Estruturais.Proxy;
 
 public interface IGerenciadorDados {
     void exibirDados(int id);
