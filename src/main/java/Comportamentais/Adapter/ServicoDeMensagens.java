@@ -11,3 +11,5 @@ public class ServicoDeMensagens {
         logger.gravarMensagem("NOTIFICACAO: " + conteudo);
     }
 }
+
+// Não consigo passar uma instancia do LoggerAntigo pois ele não implementa a interface ILoggerNovo
